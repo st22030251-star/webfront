@@ -1,0 +1,72 @@
+.place-card {
+  font-family: "Inter", Arial, sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.place-card__title {
+  max-width: 220px;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+}
+
+.place-card__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 25px 15px 31px 21px;
+  /* To make spacings to the top and bottom identical per PixelPerfext */
+}
+
+.place-card__image {
+  min-height: 282px;
+  max-height: 282px;
+  object-fit: cover;
+}
+
+.place-card__like-button {
+  width: 21px;
+  height: 19px;
+  background: transparent url("../../images/like-inactive.svg") center no-repeat;
+  /* Later it will be defined in the modifier */
+  background-size: 21px 18px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.place-card__like-button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.place-card__delete-button {
+  width: 18px;
+  height: 18px;
+  background: transparent url("../../images/delete-icon.svg") center no-repeat;
+  background-size: 18px 18px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.place-card__delete-button:hover {
+  opacity: 0.6;
+}
+
+.place-card__like-button_is-active {
+  background: transparent url("../../images/like-active.svg") no-repeat;
+}

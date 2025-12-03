@@ -1,0 +1,88 @@
+.profile{
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  color:  white;
+  display: flex;
+  align-items: center;
+  padding: 40px 0 32px;
+}
+
+.traveler-profile {
+  font-family: "Inter", Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 40px 0 32px;
+}
+
+.traveler-profile__details {
+  display: grid;
+  grid-template-areas:
+    "title button"
+    "description description";
+  grid-template-columns: minmax(auto, 373px) auto;
+  grid-gap: 7px 17px;
+}
+
+.traveler-profile__name {
+  font-size: 42px;
+  line-height: 48px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  grid-area: title;
+  margin: 0;
+}
+
+.traveler-profile__details {
+  font-size: 18px;
+  line-height: 22px;
+  grid-area: description;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 373px;
+}
+
+.traveler-profile__image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-position: center;
+  margin-right: 29px;
+}
+
+.traveler-profile__add-place-btn {
+  width: 150px;
+  height: 50px;
+  background: transparent url("../../images/add-icon.svg") center no-repeat;
+  background-size: 22px;
+  border-radius: 2px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.traveler-profile__add-place-btn:hover {
+  opacity: 0.6;
+}
+
+.traveler-profile__edit-btn {
+  width: 24px;
+  height: 24px;
+  background: transparent url("../../images/edit-icon.svg") center no-repeat;
+  background-size: 10px 10px;
+  border: 1px solid #fff;
+  grid-area: button;
+  align-self: center;
+
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.traveler-profile__edit-btn:hover {
+  opacity: 0.6;
+}
